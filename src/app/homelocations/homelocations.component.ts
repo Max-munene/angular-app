@@ -6,7 +6,19 @@ import { Housinglocation } from '../housinglocation';
   selector: 'app-homelocations',
   standalone: true,
   imports: [CommonModule],
-  template: ` <p>homelocations works!</p> `,
+  template: `
+    <section class="listing">
+      <img
+        class="listing-photo"
+        [src]="housingLocation.photo"
+        alt="Exterior photo of {{ housingLocation.name }}"
+      />
+      <h1 class="listing-heading">{{ housingLocation.name }}</h1>
+      <p class="listing-location">
+        {{ housingLocation.city }}, {{ housingLocation.state }}
+      </p>
+    </section>
+  `,
   styleUrls: ['./homelocations.component.css'],
 })
 export class HomelocationsComponent {
