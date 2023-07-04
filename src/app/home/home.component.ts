@@ -28,7 +28,7 @@ export class HomeComponent {
     name: 'Santon',
     city: 'Nairobi',
     state: 'Nai',
-    photo: 'assets/example-house.jpg',
+    photo: 'assets/Home.svg',
     availableUnits: 2,
     wifi: true,
     laundry: false,
