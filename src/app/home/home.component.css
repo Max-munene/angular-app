@@ -7,6 +7,26 @@
     justify-content: space-around;
   }
   
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.card-container{
+ width: 95%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ background-color: aquamarine;
+ gap:20px;
+}
+.card{
+  width: 24%;
+}
+
+  
   input[type="text"] {
     border: solid .01px var(grey);
     padding: 10px;

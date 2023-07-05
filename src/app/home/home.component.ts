@@ -13,12 +13,16 @@ import { Housinglocation } from '../housinglocation';
         <button class="primary" type="button">Search</button>
       </form>
     </section>
-    <section class="results">
-      <app-homelocations
-        *ngFor="let housingLocation of housingLocationList"
-        [housingLocation]="housingLocation"
-      ></app-homelocations>
-    </section>
+
+    <div class="container">
+      <div class="card-container">
+        <app-homelocations
+          class="card"
+          *ngFor="let housingLocation of housingLocationList"
+          [housingLocation]="housingLocation"
+        ></app-homelocations>
+      </div>
+    </div>
   `,
   imports: [CommonModule, HomelocationsComponent],
   styleUrls: ['./home.component.css'],
@@ -40,7 +44,7 @@ export class HomeComponent {
       name: 'Acme Fresh Start Housing',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/bernard-hermant-CLKGGwIBTaY-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 4,
       wifi: true,
       laundry: true,
@@ -50,7 +54,7 @@ export class HomeComponent {
       name: 'A113 Transitional Housing',
       city: 'Santa Monica',
       state: 'CA',
-      photo: '/assets/brandon-griggs-wR11KBaB86U-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 0,
       wifi: false,
       laundry: true,
@@ -60,7 +64,7 @@ export class HomeComponent {
       name: 'Warm Beds Housing Support',
       city: 'Juneau',
       state: 'AK',
-      photo: '/assets/i-do-nothing-but-love-lAyXdl1-Wmc-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 1,
       wifi: false,
       laundry: false,
@@ -70,7 +74,7 @@ export class HomeComponent {
       name: 'Homesteady Housing',
       city: 'Chicago',
       state: 'IL',
-      photo: '/assets/ian-macdonald-W8z6aiwfi1E-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 1,
       wifi: true,
       laundry: false,
@@ -80,7 +84,7 @@ export class HomeComponent {
       name: 'Happy Homes Group',
       city: 'Gary',
       state: 'IN',
-      photo: '/assets/krzysztof-hepner-978RAXoXnH4-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 1,
       wifi: true,
       laundry: false,
@@ -90,7 +94,7 @@ export class HomeComponent {
       name: 'Hopeful Apartment Group',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/r-architecture-JvQ0Q5IkeMM-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 2,
       wifi: true,
       laundry: true,
@@ -100,7 +104,7 @@ export class HomeComponent {
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/phil-hearing-IYfp2Ixe9nM-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 5,
       wifi: true,
       laundry: true,
@@ -110,7 +114,7 @@ export class HomeComponent {
       name: 'Hopeful Housing Solutions',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/r-architecture-GGupkreKwxA-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 2,
       wifi: true,
       laundry: true,
@@ -120,7 +124,7 @@ export class HomeComponent {
       name: 'Seriously Safe Towns',
       city: 'Oakland',
       state: 'CA',
-      photo: '/assets/saru-robert-9rP3mxf8qWI-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 10,
       wifi: false,
       laundry: false,
@@ -130,7 +134,7 @@ export class HomeComponent {
       name: 'Capital Safe Towns',
       city: 'Portland',
       state: 'OR',
-      photo: '/assets/webaliser-_TPTXZd9mOo-unsplash.jpg',
+      photo: '/assets/home254.jpeg',
       availableUnits: 6,
       wifi: true,
       laundry: true,
