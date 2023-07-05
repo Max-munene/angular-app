@@ -7,21 +7,29 @@
   }
   
   .card{
-    width: 100%;
+    /* width: fit-content; */
+    height: 100%;;
     display: flex;
     flex-direction: column;
-    background-color: blue;
+    background-color: rgb(207, 207, 237);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
   
    }
 
  .image{
-  width: 100%;
+  width: 80%;
+  /* height: 104px; */
+  
   
  }
  .image img{
   width: 100%;
+  /* border-radius: 10px; */
  }
  .details{
+  font-size: small;
   display: flex;
   flex-direction: column;
   justify-content: left;
