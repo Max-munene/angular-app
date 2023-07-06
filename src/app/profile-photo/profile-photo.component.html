@@ -1,2 +1,5 @@
-<input type="file" (change)="(onFileSelected)" />
-<button (click)="(onUpload)">Upload</button>
+<div>
+  <button>
+    <input type="file" (change)="onFileSelected($event)" />
+  </button>
+</div>
