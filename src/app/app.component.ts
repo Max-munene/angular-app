@@ -21,6 +21,10 @@ import { HomeComponent } from './home/home.component';
         <!-- <app-home></app-home> -->
         <app-profile-photo></app-profile-photo>
         <!-- <app-profile-photo></app-profile-photo> -->
+        <app-career-profile></app-career-profile>
+        <app-career-profile></app-career-profile>
+        <app-career-profile></app-career-profile>
+        <app-career-profile></app-career-profile>
       </section>
     </main>
   `,

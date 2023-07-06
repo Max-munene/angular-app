@@ -11,3 +11,8 @@
     margin: 0;
     height: 8vh;
 }
+.containerr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
