@@ -7,9 +7,9 @@ span {
 padding-right: 2rem;
 }
 
-/* .mat-toolbar.mat-primary{
+.mat-toolbar.mat-primary{
     color: #A32A29;
-} */
+}
 .mat-toobar, .navbar, .mat-primary, .mat-toolbar-single-row{
     background:white ;
     }

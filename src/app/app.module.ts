@@ -19,6 +19,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { PracticeComponent } from './components/practice/practice.component';
+// import { MatDrawerModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     BioComponent,
     NavbarComponent,
     SidenavComponent,
+    PracticeComponent,
 
     // HomeComponent
   ],
