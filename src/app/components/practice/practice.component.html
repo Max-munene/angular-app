@@ -1,3 +1,75 @@
-<h1 class="text-success">Welcome to my Webpage</h1>
+<!-- <h1 [class]="successClass">Welcome to my Webpage</h1>
 <h1 class="text-danger">Welcome to my Webpage</h1>
-<h1 class="text-italic">Welcome to my Webpage</h1>
+<h1 class="text-italic" [class]="successClass">Welcome to my Webpage</h1>
+<h1 [class.text-danger]="hasError">My code has error</h1>
+
+<h1 [ngClass]="messageClass">NgIf message Class</h1>
+
+
+Style Binding -->
+<!-- <h1 [style.color]="hasError ? 'red' : 'blue'">Style Binding</h1>
+<h2 [style.color]="highlightColor">Style Binding 2</h2>
+<h2 [ngStyle]="styleClass">Multiple Styles Binding</h2>
+<h2 [ngClass]="messageClass">Multiple Styles Binding</h2> -->
+
+<!-- Event Binding -->
+<!-- <button (click)="onClick()">Greet</button>{{ greeting }}
+<button (click)="greeting = 'Anothr event binding'">Greet</button> -->
+
+<!-- Template Referene Variables -->
+<!-- <input #myMessage type="text" />
+<button (click)="logMessage(myMessage.value)">Log</button> -->
+
+<!-- Two way Binding -->
+
+<!-- <input [(ngModel)]="name" type="text" /> {{ name }} -->
+
+<!-- *ngIf -->
+
+<!-- <h1 *ngIf="displayName">Angular</h1> -->
+
+<!-- ngIf Else -->
+<!-- <h2 *ngIf="displayName; else elseBlock">NgIf Else</h2> -->
+
+<!-- <ng-template #elseBlock> -->
+<!-- <h2>Alternative text</h2>
+
+</ng-template> -->
+
+<!-- <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+  <h1>Show up</h1>
+</ng-template>
+<ng-template #elseBlock
+  >;
+  <h1>Hidden</h1>
+</ng-template> -->
+
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">This is red</div>
+  <div *ngSwitchCase="'blue'">Tthis is blue</div>
+  <div *ngSwitchCase="'grey'">This is gre</div>
+
+  <div *ngSwitchDefault="">Pick again</div>
+</div>
+
+<!-- <div *ngFor="let color of colors; index as i"></div>
+<h1>{{ i }} {{ color }}</h1> -->
+
+<div class="container">
+  <div class="card">
+    <div class="card-holder">
+      <mat-card class="card">
+        <mat-card-title>Card Title goes here</mat-card-title>
+        <mat-card-content
+          >If you're still encountering the error after reviewing the above
+          points, it would be helpful to provide the specific code snippets
+          related to the module imports and their usage. This way, I can assist
+          you more effectively in identifying and resolving the
+          issue.</mat-card-content
+        >
+        <mat-card-footer>Some footer content dates nini nini</mat-card-footer>
+      </mat-card>
+    </div>
+  </div>
+</div>
