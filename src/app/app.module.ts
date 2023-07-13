@@ -3,13 +3,22 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// import { FlexLayoutModule } from '@angular/flex-layout';
+// My Components
 import { HomeComponent } from './home/home.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 import { CareerProfileComponent } from './components/career-profile/career-profile.component';
 import { CareerComponent } from './components/career/career.component';
 import { BioComponent } from './components/bio/bio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { PracticeComponent } from './components/practice/practice.component';
+
 // import { ModuleModule } from './module/module.module';
+// Other Imports
+import { FormsModule } from '@angular/forms';
+
+// Mat-Imports
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -17,11 +26,15 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { PracticeComponent } from './components/practice/practice.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatTableModule } from '@angular/material/table';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatSelectModule } from '@angular/material/select';
+import { MatOptionModule } from '@angular/material/core';
+import { LoginComponent } from './components/login/login.component';
+
 // import { MatDrawerModule } from '@angular/material/sidenav';
-import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +46,7 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     SidenavComponent,
     PracticeComponent,
+    LoginComponent,
 
     // HomeComponent
   ],
@@ -49,6 +63,11 @@ import { FormsModule } from '@angular/forms';
     MatInputModule,
     MatSidenavModule,
     FormsModule,
+    MatMenuModule,
+    MatTableModule,
+    MatSlideToggleModule,
+    MatSelectModule,
+    MatOptionModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

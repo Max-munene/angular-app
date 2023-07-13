@@ -14,9 +14,10 @@ import { HomeComponent } from './home/home.component';
         <!-- <app-profile-photo></app-profile-photo> -->
         <!-- <app-profile-photo></app-profile-photo> -->
         <!-- <app-career-profile></app-career-profile> -->
-        <button mat-raised-button>Hello World</button>
-        <app-sidenav></app-sidenav>
-        <app-practice></app-practice>
+        <!-- <button mat-raised-button>Hello World</button> -->
+        <!-- <app-sidenav></app-sidenav> -->
+        <!-- <app-practice></app-practice> -->
+        <app-login></app-login>
       </section>
     </main>
   `,
