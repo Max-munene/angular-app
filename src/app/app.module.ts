@@ -33,6 +33,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { LoginComponent } from './components/login/login.component';
+import { MatListModule } from '@angular/material/list';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -68,6 +69,7 @@ import { LoginComponent } from './components/login/login.component';
     MatSlideToggleModule,
     MatSelectModule,
     MatOptionModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
