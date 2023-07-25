@@ -6,18 +6,19 @@ import { HomeComponent } from './home/home.component';
   template: `
     <main>
       <header class="brand-name">
-        <app-navbar></app-navbar>
+        <!-- <app-navbar></app-navbar> -->
+        <!-- <app-sidenav></app-sidenav> -->
       </header>
       <section class="content">
         <!-- <app-home></app-home> -->
-
+        <app-sidenav></app-sidenav>
         <!-- <app-profile-photo></app-profile-photo> -->
         <!-- <app-profile-photo></app-profile-photo> -->
         <!-- <app-career-profile></app-career-profile> -->
         <!-- <button mat-raised-button>Hello World</button> -->
-        <app-sidenav></app-sidenav>
         <!-- <app-practice></app-practice> -->
         <!-- <app-login></app-login> -->
+        <app-charts></app-charts>
       </section>
     </main>
   `,

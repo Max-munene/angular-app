@@ -13,6 +13,7 @@ import { BioComponent } from './components/bio/bio.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { PracticeComponent } from './components/practice/practice.component';
+import { ChartModule } from 'angular-highcharts';
 
 // import { ModuleModule } from './module/module.module';
 // Other Imports
@@ -34,6 +35,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatOptionModule } from '@angular/material/core';
 import { LoginComponent } from './components/login/login.component';
 import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { ChartsComponent } from './components/charts/charts.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -48,6 +51,7 @@ import { MatListModule } from '@angular/material/list';
     SidenavComponent,
     PracticeComponent,
     LoginComponent,
+    ChartsComponent,
 
     // HomeComponent
   ],
@@ -70,6 +74,8 @@ import { MatListModule } from '@angular/material/list';
     MatSelectModule,
     MatOptionModule,
     MatListModule,
+    MatExpansionModule,
+    ChartModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
