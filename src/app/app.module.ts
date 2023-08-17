@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 // My Components
@@ -37,6 +37,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ChartsComponent } from './components/charts/charts.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -52,6 +53,8 @@ import { ChartsComponent } from './components/charts/charts.component';
     PracticeComponent,
     LoginComponent,
     ChartsComponent,
+    PageNotFoundComponent,
+    routingComponents
 
     // HomeComponent
   ],
