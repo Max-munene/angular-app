@@ -1,30 +1,14 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomelocationsComponent } from '../homelocations/homelocations.component';
+import { AppRoutingModule } from '../app-routing.module';
 import { Housinglocation } from '../housinglocation';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  template: `
-    <section class="section">
-      <form>
-        <input type="text" placeholder="Filter by City" />
-        <button class="primary" type="button">Search</button>
-      </form>
-    </section>
-
-    <div class="container">
-      <div class="card-container">
-        <app-homelocations
-          class="card"
-          *ngFor="let housingLocation of housingLocationList"
-          [housingLocation]="housingLocation"
-        ></app-homelocations>
-      </div>
-    </div>
-  `,
-  imports: [CommonModule, HomelocationsComponent],
+  templateUrl:'./home.component.html',
+  imports: [CommonModule, HomelocationsComponent, AppRoutingModule],
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {

@@ -8,9 +8,11 @@ import { CareerComponent } from './components/career/career.component';
 import { LoginComponent } from './components/login/login.component';
 import { PracticeComponent } from './components/practice/practice.component';
 import { HomelocationsComponent } from './homelocations/homelocations.component';
+import { CareerProfileComponent } from './components/career-profile/career-profile.component';
 
 const routes: Routes = [
-  { path: '', component: CareerComponent },
+  {path: '', component: CareerProfileComponent},
+  { path: 'career', component: CareerComponent },
   { path: 'charts', component: ChartsComponent },
   { path: 'homelocations', component: HomelocationsComponent },
   { path: 'career', component: CareerComponent },
@@ -25,7 +27,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 export const routingComponents = [
-  CareerComponent,
+  CareerComponent,CareerProfileComponent,
   ChartsComponent,
   PageNotFoundComponent,
   LoginComponent,

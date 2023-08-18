@@ -8,9 +8,16 @@
   </div>
   <div>
     <span>
-      <button  mat-icon-button><mat-icon>home</mat-icon></button>
-      <button mat-button>About</button>
-      <button mat-button>Contact</button></span
-    >
+      <button routerLink="/homelocations" mat-icon-button>
+        <mat-icon>home</mat-icon>
+      </button>
+      <button mat-button routerLink="/charts">
+        <mat-icon>insert_chart</mat-icon>Charts
+      </button>
+      <button mat-button routerLink="login">Another nav</button>
+      <button routerLink="/homelocations" mat-icon-button>
+        <mat-icon>home</mat-icon></button>
+      </span>
   </div>
 </mat-toolbar>
+<router-outlet></router-outlet>

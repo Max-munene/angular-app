@@ -7,21 +7,8 @@ span {
 padding-right: 2rem;
 }
 
-.mat-toolbar.mat-primary{
-    color: #A32A29;
-}
-.mat-toobar, .navbar, .mat-primary, .mat-toolbar-single-row{
-    background:white ;
-    }
-.mat-toolbar .mat-mdc-button-base.mat-unthemed{
-    color: #A32A29;
-}
 
-.mat-primary[_ngcontent-ng-c2507106674]{
-    /* display: flex; */
-    /* justify-content: center; */
+.mat-primary[_ngcontent-ng-c2507106674]{ 
     align-items: center;
     width: auto;
-    /* height:0%; */
-
 }

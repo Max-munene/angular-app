@@ -20,6 +20,7 @@ import { Housinglocation } from '../housinglocation';
         <p class="listing-location">
           {{ housingLocation.city }}, {{ housingLocation.state }}
         </p>
+
       </div>
     </div>
   `,
