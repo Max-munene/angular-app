@@ -9,12 +9,13 @@ import { LoginComponent } from './components/login/login.component';
 import { PracticeComponent } from './components/practice/practice.component';
 import { HomelocationsComponent } from './homelocations/homelocations.component';
 import { CareerProfileComponent } from './components/career-profile/career-profile.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
 
 const routes: Routes = [
-  {path: '', component: CareerProfileComponent},
+  { path: '', component: CareerProfileComponent },
   { path: 'career', component: CareerComponent },
   { path: 'charts', component: ChartsComponent },
-  { path: 'homelocations', component: HomelocationsComponent },
+  { path: 'sidenav', component: SidenavComponent },
   { path: 'career', component: CareerComponent },
   { path: 'login', component: LoginComponent },
   { path: 'practice', component: PracticeComponent },
@@ -27,7 +28,8 @@ const routes: Routes = [
 })
 export class AppRoutingModule {}
 export const routingComponents = [
-  CareerComponent,CareerProfileComponent,
+  CareerComponent,
+  CareerProfileComponent,
   ChartsComponent,
   PageNotFoundComponent,
   LoginComponent,

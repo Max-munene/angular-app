@@ -1,0 +1,15 @@
+.show{
+    background-color: white;
+}
+.main-container{
+    height: 90vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-not-found{
+    
+    width: 40%;
+    height: 80%;
+}

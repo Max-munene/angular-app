@@ -3,7 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
 // import { FlexLayoutModule } from '@angular/flex-layout';
+
+
+
 // My Components
 import { HomeComponent } from './home/home.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
@@ -78,7 +82,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MatOptionModule,
     MatListModule,
     MatExpansionModule,
-    ChartModule,
+    ChartModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

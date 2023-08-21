@@ -1,3 +1,11 @@
+.main-container{
+  background-color: aqua;
+}
+
+.app-sidenav-content{
+  /* background-color:cadetblue; */
+  height: 100vh;
+}
 .example-container {
     width: 300px;
     height: 400px;
@@ -16,3 +24,4 @@
     padding: 20px;
   }
   
+ 
