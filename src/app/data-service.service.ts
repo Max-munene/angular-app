@@ -9,11 +9,11 @@ import { error } from 'highcharts';
 })
 export class DataServiceService {
 private url:string = './app/data.json'
-private user: User[]=[
-  {id:2 , name:'Kinuthia Njuguna', age:23},
-  {id:3 , name:'Kinu Njugu', age:20}
+// private user: User[]=[
+//   {id:2 , name:'Kinuthia Njuguna', age:23},
+//   {id:3 , name:'Kinu Njugu', age:20}
 
-]
+// ]
 
   constructor(private http: HttpClient ) {}
 

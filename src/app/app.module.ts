@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HostListener } from '@angular/core';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 
@@ -42,6 +43,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ChartsComponent } from './components/charts/charts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { HostListenerComponent } from './host-listener/host-listener.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -58,7 +60,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     LoginComponent,
     ChartsComponent,
     PageNotFoundComponent,
-    routingComponents
+    routingComponents,
+    HostListenerComponent
 
     // HomeComponent
   ],
