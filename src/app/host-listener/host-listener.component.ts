@@ -6,24 +6,18 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./host-listener.component.css']
 })
 export class HostListenerComponent {
- showButton: boolean = false;
+ showButton: boolean = true;
 
- constructor() {
-  this.updateButtonVisibility()
+ @HostListener('window:scroll', [])
+ onWindowScroll(){
+  this.showButton = window.scrollX < 100
+ }
+
+ scrollTop(){
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  })
+ }
   
  }
- @HostListener('window:scroll', [])
-
- onWindowScroll():void{
-  this.updateButtonVisibility()
-
- }
-
-
- updateButtonVisibility(){
-this.showButton = window.pageYOffset >100
- }
- scrollToTop(){
-  window.scroll({ top: 0, behavior: 'smooth' });
- }
-}

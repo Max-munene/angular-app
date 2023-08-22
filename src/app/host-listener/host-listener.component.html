@@ -1,3 +1,9 @@
-<button *ngIf="showButton" (click)="scrollToTop()" class="scroll-up-button">
-    <span>&#8593;</span> <!-- Up arrow icon -->
-  </button>
+<button
+  mat-button
+  color="primary"
+  (click)="scrollTop()"
+  class="scroll-up-button"
+>
+  <mat-icon>expand_less</mat-icon>
+  <!-- Up arrow icon -->
+</button>
