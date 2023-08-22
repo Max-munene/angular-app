@@ -43,6 +43,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { ChartsComponent } from './components/charts/charts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ReactiveFormsModule } from '@angular/forms';
 import { HostListenerComponent } from './host-listener/host-listener.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
@@ -85,7 +86,8 @@ import { HostListenerComponent } from './host-listener/host-listener.component';
     MatOptionModule,
     MatListModule,
     MatExpansionModule,
-    ChartModule,HttpClientModule
+    ChartModule,HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

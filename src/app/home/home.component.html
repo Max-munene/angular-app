@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <section class="section">
-        <form>
-          <input type="text" placeholder="Filter by City" />
-          <button class="primary" type="button">Search</button>
-        </form>
-      </section>
-  
-      <div class="container">
-        <div class="card-container">
+<mat-drawer-containerr>
           <app-homelocations
             class="card"
             *ngFor="let housingLocation of housingLocationList"
@@ -23,6 +7,11 @@
           
         </div>
       </div>
+    <mat-drawer></mat-drawer>
+
       <router-outlet></router-outlet>
+
+</mat-drawer-containerr>
+
 </body>
 </html>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomelocationsComponent } from '../homelocations/homelocations.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { Housinglocation } from '../housinglocation';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-home',
