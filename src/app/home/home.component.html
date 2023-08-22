@@ -1,17 +1,9 @@
-<mat-drawer-containerr>
-          <app-homelocations
-            class="card"
-            *ngFor="let housingLocation of housingLocationList"
-            [housingLocation]="housingLocation"
-          ></app-homelocations>
-          
-        </div>
-      </div>
-    <mat-drawer></mat-drawer>
+<div>
+  <app-homelocations
+    class="card"
+    *ngFor="let housingLocation of housingLocationList"
+    [housingLocation]="housingLocation"
+  ></app-homelocations>
 
-      <router-outlet></router-outlet>
-
-</mat-drawer-containerr>
-
-</body>
-</html>
+  <router-outlet></router-outlet>
+</div>

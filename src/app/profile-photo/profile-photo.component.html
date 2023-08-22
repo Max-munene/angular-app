@@ -1,6 +1,45 @@
-<div>
-  <button>
-    <input type="file" (change)="onFileSelected($event)" />
-  </button>
-</div>
-<mat-drawer-content></mat-drawer-content>
+<!-- <mat-toolbar><h1>MyNav</h1></mat-toolbar>
+<mat-sidenav-container class="app-container">
+  <mat-sidenav mode="side">
+    <div>
+      <h1>Sidenav Header</h1>
+    </div>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    other Content goes here
+    <div>
+      <button mat-button color="primary">
+        <input type="file" (change)="onFileSelected($event)" />
+      </button>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<mat-drawer-container class="example-container" autosize>
+  <mat-toolbar color="primary">
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>back_hand</mat-icon>
+      </button>
+    </div>
+  </mat-toolbar>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>Auto-resizing sidenav</p>
+    <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      <mat-icon>back_hand</mat-icon>
+    </button> -->
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>back_hand</mat-icon>
+      </button>
+    </div>
+    <div>
+      <button mat-button color="primary">
+        <input type="file" (change)="onFileSelected($event)" />
+      </button>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

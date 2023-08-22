@@ -13,6 +13,7 @@ export class ProfilePhotoComponent {
     this.selectedFile = <File>event.target.files[0];
   }
 
+  showFiller = false;
   // onUpload() {
   //   if (this.selectedFile) {
   //     const formData = new FormData();

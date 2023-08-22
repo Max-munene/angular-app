@@ -10,12 +10,13 @@ import { PracticeComponent } from './components/practice/practice.component';
 import { HomelocationsComponent } from './homelocations/homelocations.component';
 import { CareerProfileComponent } from './components/career-profile/career-profile.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 
 const routes: Routes = [
   { path: '', component: CareerProfileComponent },
   { path: 'career', component: CareerComponent },
   { path: 'charts', component: ChartsComponent },
-  { path: 'sidenav', component: SidenavComponent },
+  { path: 'profile', component: ProfilePhotoComponent },
   { path: 'career', component: CareerComponent },
   { path: 'login', component: LoginComponent },
   { path: 'practice', component: PracticeComponent },
