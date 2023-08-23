@@ -19,12 +19,69 @@
   <mat-toolbar color="primary">
     <div class="example-sidenav-content">
       <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon>back_hand</mat-icon>
+        <mat-icon>menu</mat-icon>
       </button>
     </div>
   </mat-toolbar>
   <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
+    <div class="side-buttons">
+      <div>
+        <button routerLink="/charts" mat-button color="primary">
+          <mat-icon>dashboard</mat-icon>Dashboard
+        </button>
+      </div>
+
+      <mat-divider></mat-divider>
+      <div>
+        <button mat-button color="primary">
+          <mat-icon>people</mat-icon>Users
+        </button>
+      </div>
+      <mat-divider></mat-divider>
+      <div>
+        <button mat-button color="primary"><mat-icon>map</mat-icon>Map</button>
+      </div>
+      <mat-divider></mat-divider>
+      <a routerLink="/career">
+        <div>
+          <button mat-button color="primary">
+            <mat-icon>trending_up</mat-icon>Data
+          </button>
+        </div>
+      </a>
+      <mat-divider></mat-divider>
+      <div>
+        <button mat-button color="primary">
+          <mat-icon>summarize</mat-icon>Orders
+        </button>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div>
+        <button mat-button color="primary">
+          <mat-icon>account_circle</mat-icon>Account
+        </button>
+      </div>
+
+      <mat-divider></mat-divider>
+
+      <div>
+        <button mat-button color="primary">
+          <mat-icon>settings</mat-icon>Settings
+        </button>
+      </div>
+
+      <mat-divider></mat-divider>
+    </div>
+    <div class="side-buttons">
+      <div>
+        <button mat-button color="primary">
+          <mat-icon>logout</mat-icon>Logout
+        </button>
+      </div>
+    </div>
+
     <!-- <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
     <button (click)="showFiller = !showFiller" mat-raised-button>
       <mat-icon>back_hand</mat-icon>
@@ -32,14 +89,21 @@
   </mat-drawer>
   <mat-drawer-content>
     <div class="example-sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon>back_hand</mat-icon>
+      <button
+        type="button"
+        mat-button
+        (click)="drawer.toggle()"
+        color="primary"
+      >
+        <mat-icon>menu</mat-icon>
       </button>
     </div>
-    <div>
+    All Content Should go here
+    <router-outlet></router-outlet>
+    <!-- <div>
       <button mat-button color="primary">
-        <input type="file" (change)="onFileSelected($event)" />
+        <input type="file" (click)="onFileSelected($event)" />
       </button>
-    </div>
+    </div> -->
   </mat-drawer-content>
 </mat-drawer-container>

@@ -13,13 +13,18 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 
 const routes: Routes = [
-  { path: '', component: CareerProfileComponent },
-  { path: 'career', component: CareerComponent },
-  { path: 'charts', component: ChartsComponent },
-  { path: 'profile', component: ProfilePhotoComponent },
-  { path: 'career', component: CareerComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'practice', component: PracticeComponent },
+  {
+    path: '',
+    component: ProfilePhotoComponent,
+    children: [
+      { path: 'charts', component: ChartsComponent },
+      { path: 'career', component: CareerComponent },
+      // { path: 'profile', component: ProfilePhotoComponent },
+      { path: 'career', component: CareerComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'practice', component: PracticeComponent },
+    ],
+  },
   { path: '**', component: PageNotFoundComponent },
 ];
 

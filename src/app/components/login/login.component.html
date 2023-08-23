@@ -1,9 +1,4 @@
-<mat-toolbar color="primary" class="toolbar">
-  <span>
-    <button mat-button routerLink="/">{{ title }}</button>
-    <button mat-button routerLink="/"><mat-icon>home</mat-icon></button>
-  </span>
-
+<form>
   <div class="login">
     <button mat-button routerLink="/login" *ngIf="!isAuthenticated">
       <mat-icon>power_settings_new</mat-icon>
@@ -13,18 +8,10 @@
       <mat-icon>exit_to_app</mat-icon>
       LogOut
     </button>
-
-    <button mat-button routerLink="/game">
-      <mat-icon>gamepad</mat-icon>
-      Play
-    </button>
   </div>
-  <button mat-button [mat-menu-trigger-for]="menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-</mat-toolbar>
+</form>
 
-<mat-menu x-position="before" #menu="matMenu">
+<!-- <mat-menu x-position="before" #menu="matMenu">
   <button mat-menu-item routerLink="/">
     <mat-icon>home</mat-icon>
     Home
@@ -57,4 +44,4 @@
       </mat-select>
     </mat-form-field>
   </mat-card-content>
-</mat-card>
+</mat-card> -->
