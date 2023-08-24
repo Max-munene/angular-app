@@ -1,56 +1,72 @@
-import { Component } from '@angular/core';
-import { Chart } from 'angular-highcharts';
+import { Component, OnInit } from '@angular/core';
+import { Chart } from 'chart.js';
 
 @Component({
   selector: 'app-charts',
   templateUrl: './charts.component.html',
   styleUrls: ['./charts.component.css'],
 })
-export class ChartsComponent {
-  linechart = new Chart({
-    chart: {
-      type: 'line',
-    },
-    title: {
-      text: 'Linechart',
-    },
-    credits: {
-      enabled: false,
-    },
-    series: [{ name: 'Line 1', data: [1, 2, 4, 3] } as any],
-  });
-  piechart = new Chart({
-    chart: {
-      type: 'pie',
-      plotShadow: false,
-    },
-    credits: {
-      enabled: false,
-    },
-    plotOptions: {
-      pie: {
-        innerSize: '99%',
-        borderWidth: 10,
-        borderColor: '',
-        slicedOffset: 10,
-        dataLabels: {
-          connectorWidth: 0,
-        },
-      },
-    },
-    title: {
-      verticalAlign: 'middle',
-    },
-    series: [
+export class ChartsComponent implements OnInit {
+  private chart: any;
+
+  ngOnInit(): void {
+    this.chart = new Chart(
+      document.getElementById('graph') as HTMLCanvasElement,
       {
-        type: 'pie',
-        data: [
-          { name: 'Line 1', y: 1, color: '#34ebeb' },
-          { name: 'Line 2', y: 2, color: '#2189de' },
-          { name: 'Line 3', y: 3, color: '#dec221' },
-          { name: 'Line 4', y: 1, color: '#a23a29' },
-        ],
-      } as any,
-    ],
-  });
+        type: 'line',
+        data: {
+          labels: [
+            '2000',
+            '2001',
+            '2002',
+            '2003',
+            '2004',
+            '2005',
+            '2006',
+            '2007',
+            '2008',
+            '2009',
+          ],
+          datasets: [
+            {
+              label: 'My test Data Graph',
+              data: [
+                '10',
+                '20',
+                '35',
+                '40',
+                '56',
+                '10',
+                '25',
+                '36',
+                '46',
+                '100',
+              ],
+              backgroundColor: ['#fff'],
+              borderColor: ['#3f51b5'],
+              // tension: 0.35,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              display: true,
+            },
+            y: {
+              display: true,
+              beginAtZero: true,
+            },
+          },
+        },
+      }
+    );
+  }
 }
+
+// totalData() {
+//   return this.setUpChart(this.yearList, this.data);
+// }
+// private setUpChart(yearList: string[], data: string[])

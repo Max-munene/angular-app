@@ -17,6 +17,7 @@ const routes: Routes = [
     path: '',
     component: ProfilePhotoComponent,
     children: [
+      // { path: 'home', component: ProfilePhotoComponent },
       { path: 'charts', component: ChartsComponent },
       { path: 'career', component: CareerComponent },
       // { path: 'profile', component: ProfilePhotoComponent },

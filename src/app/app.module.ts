@@ -50,6 +50,7 @@ import { CardOneComponent } from './components/card-one/card-one.component';
 import { CardTwoComponent } from './components/card-two/card-two.component';
 import { CardThreeComponent } from './components/card-three/card-three.component';
 import { CardFourComponent } from './components/card-four/card-four.component';
+import { NgChartsModule } from 'ng2-charts';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -97,7 +98,8 @@ import { CardFourComponent } from './components/card-four/card-four.component';
     MatListModule,
     MatExpansionModule,
     ChartModule,HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
