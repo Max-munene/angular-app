@@ -44,7 +44,7 @@ export class ChartsComponent implements OnInit {
               ],
               backgroundColor: ['#fff'],
               borderColor: ['#3f51b5'],
-              // tension: 0.35,
+              tension: 0.35,
             },
           ],
         },
