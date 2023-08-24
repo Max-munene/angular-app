@@ -45,6 +45,7 @@ import { ChartsComponent } from './components/charts/charts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HostListenerComponent } from './host-listener/host-listener.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -62,7 +63,8 @@ import { HostListenerComponent } from './host-listener/host-listener.component';
     ChartsComponent,
     PageNotFoundComponent,
     routingComponents,
-    HostListenerComponent
+    HostListenerComponent,
+    CardsComponent
 
     // HomeComponent
   ],
