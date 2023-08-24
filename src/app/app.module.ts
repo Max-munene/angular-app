@@ -46,6 +46,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ReactiveFormsModule } from '@angular/forms';
 import { HostListenerComponent } from './host-listener/host-listener.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { CardOneComponent } from './components/card-one/card-one.component';
+import { CardTwoComponent } from './components/card-two/card-two.component';
+import { CardThreeComponent } from './components/card-three/card-three.component';
+import { CardFourComponent } from './components/card-four/card-four.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -64,7 +68,11 @@ import { CardsComponent } from './components/cards/cards.component';
     PageNotFoundComponent,
     routingComponents,
     HostListenerComponent,
-    CardsComponent
+    CardsComponent,
+    CardOneComponent,
+    CardTwoComponent,
+    CardThreeComponent,
+    CardFourComponent
 
     // HomeComponent
   ],
