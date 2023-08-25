@@ -7,8 +7,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HostListener } from '@angular/core';
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
-
-
 // My Components
 import { HomeComponent } from './home/home.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
@@ -51,6 +49,8 @@ import { CardTwoComponent } from './components/card-two/card-two.component';
 import { CardThreeComponent } from './components/card-three/card-three.component';
 import { CardFourComponent } from './components/card-four/card-four.component';
 import { NgChartsModule } from 'ng2-charts';
+import { UsersComponent } from './components/users/users.component';
+import { UsersTableComponent } from './components/users-table/users-table.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -73,7 +73,8 @@ import { NgChartsModule } from 'ng2-charts';
     CardOneComponent,
     CardTwoComponent,
     CardThreeComponent,
-    CardFourComponent
+    CardFourComponent,
+    UsersComponent,
 
     // HomeComponent
   ],
@@ -97,9 +98,12 @@ import { NgChartsModule } from 'ng2-charts';
     MatOptionModule,
     MatListModule,
     MatExpansionModule,
-    ChartModule,HttpClientModule,
+    MatIconModule,
+    ChartModule,
+    HttpClientModule,
     ReactiveFormsModule,
-    NgChartsModule
+    NgChartsModule,
+    UsersTableComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

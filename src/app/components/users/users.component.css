@@ -1,0 +1,19 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+.users-container {
+  /* display: flex; */
+  width: 90%;
+
+  /* justify-content: center; */
+}
+.add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  button {
+    background-color: white;
+    outline: 0px;
+  }
+}

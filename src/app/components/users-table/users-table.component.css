@@ -1,0 +1,9 @@
+table {
+  width: 100%;
+  border-radius: 15px;
+  /* overflow: hidden; */
+}
+
+::ng-deep mat-table {
+  border-radius: 15px;
+}

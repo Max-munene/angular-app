@@ -60,6 +60,15 @@ export class ChartsComponent implements OnInit {
               beginAtZero: true,
             },
           },
+          animations: {
+            tension: {
+              duration: 1000,
+              easing: 'linear',
+              from: 0.5,
+              to: 0,
+              loop: true,
+            },
+          },
         },
       }
     );
