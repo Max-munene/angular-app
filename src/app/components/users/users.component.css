@@ -10,10 +10,29 @@
 }
 .add {
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  margin-top: 1%;
   justify-content: space-between;
-  button {
-    background-color: white;
-    outline: 0px;
+  /* background-color: #eaedf7; */
+
+  .add-button {
+    color: #6259ca;
+    border: 0;
+    border-radius: 12px;
+    padding: 5px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 1px; */
+
+    .mat-icon {
+      display: flex;
+      font-size: 25px;
+      justify-content: center;
+      align-items: center;
+    }
   }
+}
+h1 {
+  color: #6259ca;
 }

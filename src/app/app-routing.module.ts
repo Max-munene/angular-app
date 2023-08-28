@@ -12,6 +12,7 @@ import { CareerProfileComponent } from './components/career-profile/career-profi
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 import { UsersComponent } from './components/users/users.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 const routes: Routes = [
   {
@@ -24,10 +25,12 @@ const routes: Routes = [
       { path: 'career', component: CareerComponent },
       // { path: 'profile', component: ProfilePhotoComponent },
       { path: 'career', component: CareerComponent },
-      { path: 'login', component: LoginComponent },
       { path: 'practice', component: PracticeComponent },
     ],
   },
+  { path: 'homelocation', component: HomelocationsComponent },
+
+  { path: 'login', component: LoginFormComponent },
 
   { path: '**', component: PageNotFoundComponent },
 ];

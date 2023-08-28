@@ -39,6 +39,9 @@ import { MatOptionModule } from '@angular/material/core';
 import { LoginComponent } from './components/login/login.component';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
+// ====================================Other Imports==============
 import { ChartsComponent } from './components/charts/charts.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -51,6 +54,7 @@ import { CardFourComponent } from './components/card-four/card-four.component';
 import { NgChartsModule } from 'ng2-charts';
 import { UsersComponent } from './components/users/users.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
+import { LoginFormComponent } from './components/login-form/login-form.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -75,6 +79,7 @@ import { UsersTableComponent } from './components/users-table/users-table.compon
     CardThreeComponent,
     CardFourComponent,
     UsersComponent,
+    LoginFormComponent,
 
     // HomeComponent
   ],
@@ -99,6 +104,8 @@ import { UsersTableComponent } from './components/users-table/users-table.compon
     MatListModule,
     MatExpansionModule,
     MatIconModule,
+    MatTooltipModule,
+
     ChartModule,
     HttpClientModule,
     ReactiveFormsModule,
