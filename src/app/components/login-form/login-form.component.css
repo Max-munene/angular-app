@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/assets/Background.jpg");
+  height: 90vh;
+  width: 100%;
+
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1%;
+  width: 20%;
+  /* color: white; */
+}
+.mat-form-field {
+  /* color: white; */
+}

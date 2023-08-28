@@ -16,7 +16,7 @@
 </mat-sidenav-container> -->
 
 <mat-drawer-container class="example-container" autosize>
-  <mat-toolbar color="primary">
+  <mat-toolbar>
     <div class="example-sidenav-content">
       <button type="button" mat-button (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
@@ -25,60 +25,51 @@
   </mat-toolbar>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <div class="side-buttons">
-      <div>
-        <button routerLink="/charts" mat-button color="primary">
+      <div class="button">
+        <button routerLink="/charts" mat-button>
           <mat-icon>dashboard</mat-icon>Dashboard
         </button>
       </div>
 
       <mat-divider></mat-divider>
-      <div>
-        <button routerLink="/users" mat-button color="primary">
+      <div class="button">
+        <button routerLink="/users" mat-button>
           <mat-icon>people</mat-icon>Users
         </button>
       </div>
       <mat-divider></mat-divider>
-      <div>
-        <button mat-button color="primary"><mat-icon>map</mat-icon>Map</button>
+      <div class="button">
+        <button mat-button><mat-icon>map</mat-icon>Map</button>
       </div>
       <mat-divider></mat-divider>
       <a routerLink="/career">
-        <div>
-          <button mat-button color="primary">
-            <mat-icon>trending_up</mat-icon>Data
-          </button>
+        <div class="button">
+          <button mat-button><mat-icon>trending_up</mat-icon>Data</button>
         </div>
       </a>
       <mat-divider></mat-divider>
-      <div>
-        <button mat-button color="primary">
-          <mat-icon>summarize</mat-icon>Orders
-        </button>
+      <div class="button">
+        <button mat-button><mat-icon>summarize</mat-icon>Orders</button>
       </div>
 
       <mat-divider></mat-divider>
 
-      <div>
-        <button mat-button color="primary">
-          <mat-icon>account_circle</mat-icon>Account
-        </button>
+      <div class="button">
+        <button mat-button><mat-icon>account_circle</mat-icon>Account</button>
       </div>
 
       <mat-divider></mat-divider>
 
-      <div>
-        <button mat-button color="primary">
-          <mat-icon>settings</mat-icon>Settings
-        </button>
+      <div class="button">
+        <button mat-button><mat-icon>settings</mat-icon>Settings</button>
       </div>
 
       <mat-divider></mat-divider>
     </div>
+
     <div class="side-buttons">
-      <div>
-        <button mat-button color="primary">
-          <mat-icon>logout</mat-icon>Logout
-        </button>
+      <div class="button">
+        <button mat-button><mat-icon>logout</mat-icon>Logout</button>
       </div>
     </div>
 
