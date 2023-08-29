@@ -1,18 +1,36 @@
 <div class="main-container">
   <!-- img src="/assets/background1.jpg" alt="" /> -->
-  <form>
+  <form #userForm="ngForm">
     <div class="login-form"></div>
     <mat-form-field appearance="outline">
       <mat-label>First Name</mat-label>
-      <input matInput placeholder="John" required="Cannot be Empty!" />
+      <input
+        matInput
+        placeholder="John"
+        required="Cannot be Empty!"
+        name="firstname"
+        [(ngModel)]="userLogin.name"
+      />
     </mat-form-field>
 
     <mat-form-field appearance="outline">
       <mat-label>Email</mat-label>
-      <input matInput placeholder="text@g.com" />
+      <input
+        matInput
+        type="email"
+        required
+        placeholder="text@g.com"
+        name="email"
+        [(ngModel)]="userLogin.email"
+      />
       <mat-icon matSuffix>email</mat-icon>
     </mat-form-field>
+    <!-- pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$" -->
+    <!-- <div *ngIf="email.touched || pass.invalid">
+      <small class="form-danger" *ngIf="email.touched">Invalid email!</small>
+    </div> -->
 
+    <!-- <div class="form-group"> -->
     <mat-form-field appearance="outline">
       <mat-label>Password</mat-label>
       <input
@@ -20,10 +38,43 @@
         type="password"
         placeholder="Enter strong Password"
         required="Enter Password!"
+        #pass="ngModel"
+        required
+        [class.form-danger]="pass.touched"
+        name="password"
+        [type]="hide ? 'text' : 'password'"
+        [(ngModel)]="userLogin.password"
       />
-      <mat-icon matSuffix>visibility_off</mat-icon>
+
+      <mat-icon matSuffix (click)="hide = !hide">{{
+        hide ? "visibility" : "visibility_off"
+      }}</mat-icon>
     </mat-form-field>
 
-    <button mat-raised-button type="submit" color="primary">Submit</button>
+    <mat-form-field appearance="outline">
+      <mat-select
+        #select="ngModel"
+        [class.form-danger]="select.invalid && select.touched"
+        name="select"
+        [(ngModel)]="userLogin.select"
+        required
+      >
+        <mat-option value="option 1"> Option 1 </mat-option>
+        <mat-option value="option 1"> Option 2 </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <!-- <div *ngIf="select.touched || select.invalid">
+      <small class="form-danger" *ngIf="select.touched"
+        >Select an Option!</small
+      >
+      <small class="form-danger" *ngIf="select.invalid"
+        >Select an Option!</small
+      >
+    </div> -->
+
+    <!-- <div *ngIf="pass.errors && (pass.touched || pass.invalid)"></div>
+      <small class="form-danger" *ngIf="pass.touched">password required!</small>
+    </div> -->
+    <button mat-raised-button type="submit" color="primary">Login</button>
   </form>
 </div>

@@ -25,8 +25,14 @@ form {
   justify-content: center;
   margin-top: 1%;
   width: 20%;
-  /* color: white; */
+  button {
+    opacity: 1;
+  }
 }
-.mat-form-field {
-  /* color: white; */
+
+.is-invalid {
+  outline-color: red;
+}
+.form-danger {
+  color: red;
 }
