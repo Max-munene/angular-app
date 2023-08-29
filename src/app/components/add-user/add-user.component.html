@@ -1,0 +1,105 @@
+<div class="main-container">
+  <!-- img src="/assets/background1.jpg" alt="" /> -->
+  <form #userForm="ngForm">
+    <div class="addUser-form"></div>
+    <mat-form-field appearance="outline">
+      <mat-label>First Name</mat-label>
+      <input
+        matInput
+        placeholder="John"
+        required="Cannot be Empty!"
+        name="firstname"
+        [(ngModel)]="userAdd.firstName"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Second Name</mat-label>
+      <input
+        matInput
+        placeholder="Doe"
+        required="Cannot be Empty!"
+        name="secondName"
+        [(ngModel)]="userAdd.secondName"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="text@g.com"
+        required="Cannot be Empty!"
+        name="email"
+        [(ngModel)]="userAdd.email"
+      />
+      <mat-icon matSuffix>email</mat-icon>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Phone Number</mat-label>
+      <input
+        matInput
+        type="tel"
+        required
+        placeholder="07xxxxxxx"
+        name="phoneNumber"
+        [(ngModel)]="userAdd.phoneNumber"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>Physical Address</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="P.O Box 123"
+        required="Enter Address"
+        required
+        name="Address"
+        [(ngModel)]="userAdd.address"
+      />
+      <!-- <mat-icon matSuffix (click)="hide = !hide">{{
+          hide ? "visibility" : "visibility_off"
+        }}</mat-icon> -->
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <!-- <mat-select -->
+      <mat-label>Age</mat-label>
+      <input
+        matInput
+        type="number"
+        name="age"
+        required
+        [(ngModel)]="userAdd.age"
+      />
+      <!-- <mat-option value="option 1"> Option 1 </mat-option>
+          <mat-option value="option 1"> Option 2 </mat-option>
+        </mat-select> -->
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <!-- <mat-select -->
+      <mat-label>User ID.</mat-label>
+      <input
+        matInput
+        type="number"
+        name="userNumber"
+        required
+        [(ngModel)]="userAdd.userNumber"
+      />
+      <!-- <mat-option value="option 1"> Option 1 </mat-option>
+            <mat-option value="option 1"> Option 2 </mat-option>
+          </mat-select> -->
+    </mat-form-field>
+
+    <button
+      [disabled]="userForm.form.invalid"
+      mat-raised-button
+      type="submit"
+      color="primary"
+    >
+      Add
+    </button>
+  </form>
+</div>

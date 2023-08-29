@@ -40,6 +40,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
 
 // ====================================Other Imports==============
 import { ChartsComponent } from './components/charts/charts.component';
@@ -55,6 +56,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { UsersComponent } from './components/users/users.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
+import { AddUserComponent } from './components/add-user/add-user.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -80,6 +82,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     CardFourComponent,
     UsersComponent,
     LoginFormComponent,
+    AddUserComponent,
 
     // HomeComponent
   ],
@@ -105,6 +108,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
     MatExpansionModule,
     MatIconModule,
     MatTooltipModule,
+    MatDialogModule,
 
     ChartModule,
     HttpClientModule,

@@ -1,0 +1,19 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+form {
+  margin: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 1%; */
+  width: 80%;
+  button {
+    opacity: 1;
+  }
+}
+.mdc-dialog__surface {
+  border-radius: 16px;
+}
