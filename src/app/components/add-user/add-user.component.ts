@@ -7,5 +7,9 @@ import { AddUser } from 'src/app/add-user';
   styleUrls: ['./add-user.component.css'],
 })
 export class AddUserComponent {
-  userAdd = new AddUser('', '', '', 0, '', 0, 0);
+  userAdd = new AddUser('', '', '', +254, '', NaN, NaN);
+
+  onSubmit() {
+    console.log(this.userAdd);
+  }
 }

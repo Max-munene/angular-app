@@ -1,6 +1,6 @@
 <div class="main-container">
   <!-- img src="/assets/background1.jpg" alt="" /> -->
-  <form #userForm="ngForm">
+  <form #userForm="ngForm" novalidate (ngSubmit)="(onSubmit)">
     <div class="addUser-form"></div>
     <mat-form-field appearance="outline">
       <mat-label>First Name</mat-label>
@@ -98,6 +98,7 @@
       mat-raised-button
       type="submit"
       color="primary"
+      (click)="onSubmit()"
     >
       Add
     </button>
