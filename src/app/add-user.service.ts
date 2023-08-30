@@ -25,15 +25,15 @@ import { AddUser } from './add-user';
   providedIn: 'root',
 })
 export class UserService {
-  private baseUrl = ''; // Replace with your API endpoint
+  private baseUrl = 'http://localhost:3000/add-user'; // Replace with your API endpoint
 
   constructor(private http: HttpClient) {}
 
   addUser(user: AddUser): Observable<any> {
-    const url = `${this.baseUrl}/add-user`;
-    return this.http.post(url, user).pipe(
+    // const url = `${this.baseUrl}`;
+    return this.http.post(this.baseUrl, user).pipe(
       catchError((error) => {
-        // Handle error here, you can log or display a user-friendly message
+        console.error('Error', error);
         throw error;
       })
     );

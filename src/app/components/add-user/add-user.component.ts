@@ -28,6 +28,7 @@ import { Component } from '@angular/core';
 import { UserService } from 'src/app/add-user.service';
 import { AddUser } from 'src/app/add-user';
 import { catchError } from 'rxjs/operators';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-user',
@@ -37,7 +38,10 @@ import { catchError } from 'rxjs/operators';
 export class AddUserComponent {
   userAdd = new AddUser('', '', '', '+254', '', NaN, NaN);
 
-  constructor(private userService: UserService) {}
+  constructor(
+    private userService: UserService,
+    private dialogRef: MatDialogRef<AddUserComponent>
+  ) {}
 
   onSubmit() {
     this.userService
@@ -51,6 +55,7 @@ export class AddUserComponent {
       )
       .subscribe((data) => {
         console.log('Data', data);
+        this.dialogRef.close(data);
         // Reset the form or take any other action upon success
       });
   }
