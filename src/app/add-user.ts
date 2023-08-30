@@ -3,7 +3,7 @@ export class AddUser {
     public firstName: string,
     public secondName: string,
     public email: string,
-    public phoneNumber: number,
+    public phoneNumber: string,
     public address: string,
     public age: number,
     public userNumber: number
