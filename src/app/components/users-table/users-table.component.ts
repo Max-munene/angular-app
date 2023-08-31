@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { MatTableModule } from '@angular/material/table';
+import { MatTableDataSource, MatTableModule } from '@angular/material/table';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { error } from 'highcharts';
+import { UserService } from 'src/app/add-user.service';
 
 export interface UserseLElement {
   name: string;
@@ -7,18 +10,18 @@ export interface UserseLElement {
   status: string;
   id: number;
 }
-const ELEMENT_DATA: UserseLElement[] = [
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-  { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
-];
+// const ELEMENT_DATA: UserseLElement[] = [
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+//   { name: 'Munene Muriuki', email: 'mu@g.com', status: 'Employed', id: 123 },
+// ];
 
 @Component({
   selector: 'app-users-table',
@@ -28,6 +31,30 @@ const ELEMENT_DATA: UserseLElement[] = [
   imports: [MatTableModule],
 })
 export class UsersTableComponent {
-  displayedData: string[] = ['name', 'email', 'status', 'id'];
-  dataSource = ELEMENT_DATA;
+  displayedData: string[] = [
+    'firstName',
+    'secondName',
+    'email',
+    'phoneNumber',
+    'address',
+    'age',
+    'userNumber',
+  ];
+
+  dataSource = new MatTableDataSource();
+  url = 'http://localhost:3000/get-user';
+
+  constructor(private http: UserService) {}
+
+  ngOnInit() {
+    this.http.getUser(this.url).subscribe({
+      next: (res) => {
+        console.log(res);
+        this.dataSource = res;
+      },
+      error: (res) => {
+        console.error('This Error!', res);
+      },
+    });
+  }
 }

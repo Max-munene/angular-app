@@ -5,6 +5,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HostListener } from '@angular/core';
+
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
 // My Components
@@ -57,6 +58,7 @@ import { UsersComponent } from './components/users/users.component';
 import { UsersTableComponent } from './components/users-table/users-table.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
+import { UserService } from './add-user.service';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -116,7 +118,7 @@ import { AddUserComponent } from './components/add-user/add-user.component';
     NgChartsModule,
     UsersTableComponent,
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

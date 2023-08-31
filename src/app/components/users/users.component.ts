@@ -14,14 +14,17 @@ import { AddUserComponent } from '../add-user/add-user.component';
 export class UsersComponent {
   constructor(public dialog: MatDialog) {}
 
+  ngOnInit() {}
+
   openDialog() {
     const dialogRef: MatDialogRef<AddUserComponent> = this.dialog.open(
       AddUserComponent,
       { width: '30%' }
     );
 
-    dialogRef
-      .afterClosed()
-      .subscribe((result) => console.log('Dialog result: ${result}'));
+    dialogRef.afterClosed().subscribe((result) => {
+      console.log('Dialog result: ${result}');
+      this.ngOnInit();
+    });
   }
 }
