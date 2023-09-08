@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import {
   MatDialog,
   MatDialogRef,
@@ -12,6 +12,7 @@ import { AddUserComponent } from '../add-user/add-user.component';
   styleUrls: ['./users.component.css'],
 })
 export class UsersComponent {
+  
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}

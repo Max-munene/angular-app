@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, Subject } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 import { AddUser } from './add-user';
 
@@ -24,5 +24,13 @@ export class UserService {
   url = 'http://localhost:3000/get-user';
   getUser(url: string): Observable<any> {
     return this.http.get(url);
+  }
+
+  private _listeners = new Subject<any>();
+  listen():Observable<any>{
+ return this._listeners.asObservable()
+  }
+  filter(filterBy:string){
+    return  this._listeners.next(filterBy)
   }
 }
