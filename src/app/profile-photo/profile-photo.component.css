@@ -12,11 +12,17 @@
 
   align-items: center;
 }
+mat-drawer.mat-drawer-side {
+  width: 200px;
+  padding: 0;
+}
 
 .example-sidenav {
   background-color: #051e34;
   padding: 20px;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .side-toolbar {
   background-color: aquamarine;

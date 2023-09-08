@@ -8,9 +8,16 @@
 
   /* justify-content: center; */
 }
+mat-card {
+  background-color: #ffffff;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
 .add {
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
-  width: 100%;
+  width: auto;
   margin-top: 1%;
   justify-content: space-between;
   /* background-color: #eaedf7; */

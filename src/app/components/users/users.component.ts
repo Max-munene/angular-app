@@ -1,10 +1,11 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import {
   MatDialog,
   MatDialogRef,
   MatDialogModule,
 } from '@angular/material/dialog';
 import { AddUserComponent } from '../add-user/add-user.component';
+import { UsersTableComponent } from '../users-table/users-table.component';
 
 @Component({
   selector: 'app-users',
@@ -12,7 +13,8 @@ import { AddUserComponent } from '../add-user/add-user.component';
   styleUrls: ['./users.component.css'],
 })
 export class UsersComponent {
-  
+  @ViewChild(UsersTableComponent) userTable!: UsersTableComponent;
+
   constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}
@@ -24,8 +26,8 @@ export class UsersComponent {
     );
 
     dialogRef.afterClosed().subscribe((result) => {
-      console.log('Dialog result: ${result}');
-      this.ngOnInit();
+      // console.log('Dialog result: ${result}');
+      console.log('Refresh!', this.userTable.ngOnInit());
     });
   }
 }

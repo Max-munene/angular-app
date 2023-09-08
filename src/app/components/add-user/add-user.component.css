@@ -18,3 +18,8 @@ form {
 .mdc-dialog__surface {
   border-radius: 16px;
 }
+::ng-deep mat-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

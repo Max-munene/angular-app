@@ -27,10 +27,15 @@ export class UserService {
   }
 
   private _listeners = new Subject<any>();
-  listen():Observable<any>{
- return this._listeners.asObservable()
+
+  // Provide an observable interface for components/services to listen to events
+  listen(): Observable<any> {
+    return this._listeners.asObservable();
   }
-  filter(filterBy:string){
-    return  this._listeners.next(filterBy)
+
+  // Method to add/emits an event/message
+  add(addBy: string) {
+    // Use the 'next' method of the Subject to emit the event/message
+    this._listeners.next(addBy);
   }
 }

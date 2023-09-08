@@ -44,8 +44,10 @@ export class UsersTableComponent {
   dataSource = new MatTableDataSource();
   url = 'http://localhost:3000/get-user';
 
-  constructor(private http: UserService) {}
-
+  constructor(private http: UserService) {
+    //   this.http.listen().subscribe((m) => console.log(m));
+    //   this.refresh();
+  }
   ngOnInit() {
     this.http.getUser(this.url).subscribe({
       next: (res) => {
@@ -57,4 +59,16 @@ export class UsersTableComponent {
       },
     });
   }
+  // refresh() {
+  //   this.http.getUser(this.url).subscribe({
+  //     next: (res: UserseLElement[]) => {
+  //       console.log(res);
+  //       this.dataSource.data = res;
+  //       this.dataSource._updateChangeSubscription(); // Refresh the MatTable
+  //     },
+  //     error: (res) => {
+  //       console.error('This Error!', res);
+  //     },
+  //   });
+  // }
 }

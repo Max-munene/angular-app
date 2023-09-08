@@ -1,11 +1,13 @@
 <div class="main-container">
   <div class="users-container">
-    <div class="add">
-      <h1>Users</h1>
-      <a class="add-button" matTooltip="Add user" (click)="openDialog()"
-        ><mat-icon>add_circle_outline</mat-icon></a
-      >
-    </div>
+    <mat-card class="mat-elevation-z8">
+      <div class="add">
+        <h1>Users</h1>
+        <a class="add-button" matTooltip="Add user" (click)="openDialog()"
+          ><mat-icon>add_circle_outline</mat-icon></a
+        >
+      </div>
+    </mat-card>
     <app-users-table></app-users-table>
   </div>
 </div>
