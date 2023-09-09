@@ -42,6 +42,7 @@ mat-drawer {
   color: white;
 }
 .button {
+  width: 100%;
   /* color: white; */
   .mat-icon {
     color: white;
@@ -49,4 +50,7 @@ mat-drawer {
   .mdc-button .mdc-button__label {
     color: white;
   }
+}
+.button:hover {
+  background-color: #14324c;
 }

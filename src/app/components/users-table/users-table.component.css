@@ -5,5 +5,6 @@ table {
 }
 
 ::ng-deep mat-table {
+  border-color: #fceadf;
   border-radius: 15px;
 }

@@ -48,9 +48,11 @@
         </div>
       </a>
       <mat-divider></mat-divider>
-      <div class="button">
-        <button mat-button><mat-icon>summarize</mat-icon>Orders</button>
-      </div>
+      <a routerLink="/orders">
+        <div class="button">
+          <button mat-button><mat-icon>shopping_cart</mat-icon>Orders</button>
+        </div>
+      </a>
 
       <mat-divider></mat-divider>
 
@@ -92,10 +94,5 @@
     </div>
 
     <router-outlet></router-outlet>
-    <!-- <div>
-      <button mat-button color="primary">
-        <input type="file" (click)="onFileSelected($event)" />
-      </button>
-    </div> -->
   </mat-drawer-content>
 </mat-drawer-container>
