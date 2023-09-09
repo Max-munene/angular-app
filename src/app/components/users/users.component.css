@@ -9,12 +9,19 @@
   /* justify-content: center; */
 }
 mat-card {
-  background-color: #fdf1ea;
+  display: flex;
+  justify-content: space-between;
+  background-color: #ccdce9;
   margin-bottom: 15px;
   border-radius: 10px;
+  padding-left: 10px;
 }
 .add {
-  color: black;
+  color: #144b73;
+  h1 {
+    color: #144b73;
+    /* margin-left: 10px; */
+  }
 
   padding-left: 10px;
   padding-right: 10px;
@@ -41,6 +48,6 @@ mat-card {
     }
   }
 }
-h1 {
+/* h1 {
   color: #6259ca;
-}
+} */

@@ -1,10 +1,10 @@
-.example-container {
+.container {
   width: 100%;
   height: 90vh;
   border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.example-sidenav-content {
+.sidenav-content {
   width: 100%;
   display: flex;
   /* height: 100%; */
@@ -17,15 +17,15 @@ mat-drawer.mat-drawer-side {
   padding: 0;
 }
 
-.example-sidenav {
-  background-color: #051e34;
+.sidenav {
+  background-color: #144b73;
   padding: 20px;
   color: white;
   display: flex;
   justify-content: center;
 }
 .side-toolbar {
-  background-color: aquamarine;
+  background-color: #144b73;
 }
 mat-drawer {
   background-color: rgb(255, 255, 255);
@@ -52,5 +52,5 @@ mat-drawer {
   }
 }
 .button:hover {
-  background-color: #14324c;
+  background-color: #3f7aa4;
 }

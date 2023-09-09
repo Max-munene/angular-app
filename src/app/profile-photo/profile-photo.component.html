@@ -15,32 +15,34 @@
   </mat-sidenav-content>
 </mat-sidenav-container> -->
 
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="container" autosize>
   <mat-toolbar>
-    <div class="example-sidenav-content">
+    <div class="sidenav-content">
       <button type="button" mat-button (click)="drawer.toggle()">
         <mat-icon>menu</mat-icon>
       </button>
     </div>
   </mat-toolbar>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
+  <mat-drawer #drawer class="sidenav" mode="side">
     <div class="side-buttons">
-      <div class="button">
-        <button routerLink="/charts" mat-button>
-          <mat-icon>dashboard</mat-icon>Dashboard
-        </button>
-      </div>
+      <a routerLink="/charts">
+        <div class="button">
+          <button mat-button><mat-icon>dashboard</mat-icon>Dashboard</button>
+        </div>
+      </a>
 
       <mat-divider></mat-divider>
-      <div class="button">
-        <button routerLink="/users" mat-button>
-          <mat-icon>people</mat-icon>Users
-        </button>
-      </div>
+      <a routerLink="/users">
+        <div class="button">
+          <button mat-button><mat-icon>people</mat-icon>Users</button>
+        </div>
+      </a>
       <mat-divider></mat-divider>
-      <div class="button">
-        <button mat-button><mat-icon>map</mat-icon>Map</button>
-      </div>
+      <a routerLink="">
+        <div class="button">
+          <button mat-button><mat-icon>map</mat-icon>Map</button>
+        </div>
+      </a>
       <mat-divider></mat-divider>
       <a routerLink="/career">
         <div class="button">
@@ -55,17 +57,17 @@
       </a>
 
       <mat-divider></mat-divider>
-
-      <div class="button">
-        <button mat-button><mat-icon>account_circle</mat-icon>Account</button>
-      </div>
-
+      <a routerLink="">
+        <div class="button">
+          <button mat-button><mat-icon>account_circle</mat-icon>Account</button>
+        </div>
+      </a>
       <mat-divider></mat-divider>
-
-      <div class="button">
-        <button mat-button><mat-icon>settings</mat-icon>Settings</button>
-      </div>
-
+      <a routerLink="">
+        <div class="button">
+          <button mat-button><mat-icon>settings</mat-icon>Settings</button>
+        </div>
+      </a>
       <mat-divider></mat-divider>
     </div>
 

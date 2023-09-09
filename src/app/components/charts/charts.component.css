@@ -24,17 +24,22 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: rgb(222, 255, 243);
+  background-color: #dfbe7d;
   width: 50px;
   height: 50px;
   margin-top: 10px;
 }
 
 .charts {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 canvas {
   height: 90%;
+  width: 90%;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-left: 10px;
 }
