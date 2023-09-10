@@ -16,14 +16,14 @@
 </mat-sidenav-container> -->
 
 <mat-drawer-container class="container" autosize>
-  <mat-toolbar>
-    <div class="sidenav-content">
-      <button type="button" mat-button (click)="drawer.toggle()">
-        <mat-icon>menu</mat-icon>
-      </button>
-    </div>
-  </mat-toolbar>
   <mat-drawer #drawer class="sidenav" mode="side">
+    <mat-toolbar class="side-toolbar">
+      <div class="sidenav-content">
+        <button type="button" mat-button (click)="drawer.toggle()">
+          <mat-icon>arrow_back_ios</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
     <div class="side-buttons">
       <a routerLink="/charts">
         <div class="button">
@@ -38,7 +38,7 @@
         </div>
       </a>
       <mat-divider></mat-divider>
-      <a routerLink="">
+      <a routerLink="/maps">
         <div class="button">
           <button mat-button><mat-icon>map</mat-icon>Map</button>
         </div>
@@ -91,7 +91,7 @@
         (click)="drawer.toggle()"
         color="primary"
       >
-        <mat-icon>menu</mat-icon>
+        <mat-icon>menu_open</mat-icon>
       </button>
     </div>
 

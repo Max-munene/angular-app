@@ -59,6 +59,7 @@ import { UsersTableComponent } from './components/users-table/users-table.compon
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserService } from './add-user.service';
+import { MapComponent } from './components/map/map.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -85,6 +86,7 @@ import { UserService } from './add-user.service';
     UsersComponent,
     LoginFormComponent,
     AddUserComponent,
+    MapComponent,
 
     // HomeComponent
   ],

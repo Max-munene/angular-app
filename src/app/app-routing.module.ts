@@ -13,6 +13,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ProfilePhotoComponent } from './profile-photo/profile-photo.component';
 import { UsersComponent } from './components/users/users.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
+import { MapComponent } from './components/map/map.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
       // { path: 'home', component: ProfilePhotoComponent },
       { path: 'charts', component: ChartsComponent },
       { path: 'users', component: UsersComponent },
+      { path: 'maps', component: MapComponent },
       { path: 'career', component: CareerComponent },
       // { path: 'profile', component: ProfilePhotoComponent },
       { path: 'career', component: CareerComponent },
