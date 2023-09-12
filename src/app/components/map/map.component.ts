@@ -26,8 +26,8 @@ export class MapComponent {
   private initializeMap(): void {
     // Create a map view centered at a specific location and with an initial zoom level
     const view = new View({
-      center: fromLonLat([-1.286389, 36.817223]),
-      zoom: 5,
+      center: fromLonLat([36.9150441841, -1.15307321277]),
+      zoom: 13,
     });
 
     // Create a map instance
@@ -49,9 +49,9 @@ export class MapComponent {
     marker.setStyle(
       new Style({
         image: new Icon({
-          anchor: [-1.286389, 36.817223],
-          src: 'assets/', // Replace with your marker image path
-          scale: 0.1,
+          anchor: [36.9150441841, -1.15307321277],
+          src: 'assets/TRM.jpeg', // Replace with your marker image path
+          scale: 1,
         }),
       })
     );
