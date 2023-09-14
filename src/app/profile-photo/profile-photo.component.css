@@ -11,7 +11,9 @@
   justify-content: left;
   align-items: center;
   .mat-icon {
+    margin-top: 20px;
     color: white;
+    font-size: medium;
   }
 }
 
@@ -59,4 +61,12 @@ mat-drawer {
 }
 .button:hover {
   background-color: #3f7aa4;
+}
+
+.example-sidenav-content {
+  .mat-icon {
+    margin-top: 8px;
+    color: #144b73;
+    font-size: medium;
+  }
 }

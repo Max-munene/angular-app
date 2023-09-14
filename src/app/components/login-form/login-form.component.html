@@ -59,6 +59,11 @@
         [(ngModel)]="userLogin.select"
         required
       >
+        <div ngDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngDropdownMenu>Action 1</button>
+          <button ngDropdownMenu>Action 2</button>
+          <button ngDropdownMenu>Action 3</button>
+        </div>
         <mat-option value="option 1"> Option 1 </mat-option>
         <mat-option value="option 1"> Option 2 </mat-option>
       </mat-select>

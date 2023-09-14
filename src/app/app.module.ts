@@ -19,6 +19,9 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { PracticeComponent } from './components/practice/practice.component';
 import { ChartModule } from 'angular-highcharts';
 
+// Bootstrap
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+
 // import { ModuleModule } from './module/module.module';
 // Other Imports
 import { FormsModule } from '@angular/forms';
@@ -113,6 +116,8 @@ import { MapComponent } from './components/map/map.component';
     MatIconModule,
     MatTooltipModule,
     MatDialogModule,
+
+    BsDropdownModule,
 
     ChartModule,
     HttpClientModule,

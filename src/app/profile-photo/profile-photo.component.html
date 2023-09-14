@@ -19,9 +19,9 @@
   <mat-drawer #drawer class="sidenav" mode="side">
     <mat-toolbar class="side-toolbar">
       <div class="sidenav-content">
-        <button type="button" mat-button (click)="drawer.toggle()">
+        <p (click)="drawer.toggle()">
           <mat-icon>arrow_back_ios</mat-icon>
-        </button>
+        </p>
       </div>
     </mat-toolbar>
     <div class="side-buttons">
@@ -84,15 +84,9 @@
   </mat-drawer>
   <mat-drawer-content>
     <div class="example-sidenav-content">
-      <button
-        matTooltip="Menu"
-        type="button"
-        mat-button
-        (click)="drawer.toggle()"
-        color="primary"
-      >
-        <mat-icon>menu_open</mat-icon>
-      </button>
+      <p (click)="drawer.toggle()">
+        <mat-icon matTooltip="Menu">menu_open</mat-icon>
+      </p>
     </div>
 
     <router-outlet></router-outlet>
