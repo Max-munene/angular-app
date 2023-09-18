@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 import Map from 'ol/Map';
 import View from 'ol/View';
@@ -23,11 +23,11 @@ export class MapComponent {
     this.initializeMap();
   }
 
-  private initializeMap(): void {
+  public initializeMap(): void {
     // Create a map view centered at a specific location and with an initial zoom level
     const view = new View({
-      center: fromLonLat([0, 0]),
-      zoom: 2,
+      center: fromLonLat([36.907054, -1.158751]),
+      zoom: 10,
     });
 
     // Create a map instance
@@ -43,14 +43,14 @@ export class MapComponent {
 
     // Add a marker to the map
     const marker = new Feature({
-      geometry: new Point(fromLonLat([0, 0])),
+      geometry: new Point(fromLonLat([36.907054, -1.158751])),
     });
 
     marker.setStyle(
       new Style({
         image: new Icon({
           anchor: [0.5, 1],
-          src: 'assets/marker.png', // Replace with your marker image path
+          src: 'assets/home.png', // Replace with your marker image path
           scale: 0.1,
         }),
       })

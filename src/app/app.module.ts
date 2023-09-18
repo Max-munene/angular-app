@@ -63,6 +63,7 @@ import { LoginFormComponent } from './components/login-form/login-form.component
 import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserService } from './add-user.service';
 import { MapComponent } from './components/map/map.component';
+import { CommonModule } from '@angular/common';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -124,6 +125,7 @@ import { MapComponent } from './components/map/map.component';
     ReactiveFormsModule,
     NgChartsModule,
     UsersTableComponent,
+    CommonModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent],

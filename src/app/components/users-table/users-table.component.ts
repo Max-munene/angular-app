@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { NgFor } from '@angular/common';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { error } from 'highcharts';
