@@ -16,7 +16,7 @@
 </mat-sidenav-container> -->
 
 <mat-drawer-container class="container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side">
+  <mat-drawer #drawer class="sidenav" mode="side" [opened]="true">
     <mat-toolbar class="side-toolbar">
       <div class="sidenav-content">
         <p (click)="drawer.toggle()">

@@ -43,7 +43,7 @@ export class UsersTableComponent {
     'userNumber',
   ];
 
-  dataSource = new MatTableDataSource();
+  dataSource = new MatTableDataSource([]);
   url = 'http://localhost:3000/get-user';
 
   constructor(private http: UserService) {

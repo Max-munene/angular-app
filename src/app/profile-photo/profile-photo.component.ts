@@ -22,4 +22,14 @@ export class ProfilePhotoComponent {
   //     this.httpClient.post('/api/upload', formData).subscribe((response) => {
   //       console.log('Upload success!', response);
   //       // Handle the server response as needed
+
+  showing!: boolean;
+
+  // toggler() {
+  //   if (this.showing) {
+  //     return (this.showing = true);
+  //   } else {
+  //     return (this.showing = false);
+  //   }
+  // }
 }

@@ -59,15 +59,15 @@
     </tr>
   </thead>
   <tbody>
-    <tr *[ngFor]="let element of displayedData">
+    <tr *[ngFor]="let data of displayedData">
       <th scope="row">1</th>
-      <td>{{ element.firstName }}</td>
-      <td>{{ element.secondName }}</td>
-      <td>{{ element.email }}</td>
-      <td>{{ element.phoneNumber }}</td>
-      <td>{{ element.address }}</td>
-      <td>{{ element.age }}</td>
-      <td>{{ element.userNumber }}</td>
+      <td>{{ data.firstName }}</td>
+      <td>{{ data.secondName }}</td>
+      <td>{{ data.email }}</td>
+      <td>{{ data.phoneNumber }}</td>
+      <td>{{ data.address }}</td>
+      <td>{{ data.age }}</td>
+      <td>{{ data.userNumber }}</td>
     </tr>
     <!-- <tr>
       <th scope="row">2</th>

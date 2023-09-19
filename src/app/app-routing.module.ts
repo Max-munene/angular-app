@@ -20,7 +20,7 @@ const routes: Routes = [
     path: '',
     component: ProfilePhotoComponent,
     children: [
-      // { path: 'home', component: ProfilePhotoComponent },
+      { path: '', redirectTo: 'charts', pathMatch: 'full' },
       { path: 'charts', component: ChartsComponent },
       { path: 'users', component: UsersComponent },
       { path: 'maps', component: MapComponent },

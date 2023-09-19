@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProfilePhotoComponent } from 'src/app/profile-photo/profile-photo.component';
 
 @Component({
   selector: 'app-navbar',
@@ -12,4 +13,8 @@ export class NavbarComponent {
   //   };
   // function printingContact(){
   //   return
+  // constructor(public toggle: ProfilePhotoComponent) {}
+  // toggleBtn() {
+  //   this.toggle.toggler();
+  // }
 }
