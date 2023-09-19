@@ -43,8 +43,9 @@ export class UsersTableComponent {
     'userNumber',
   ];
 
-  dataSource = new MatTableDataSource([]);
+  dataSource: any[] = [];
   url = 'http://localhost:3000/get-user';
+  data: any;
 
   constructor(private http: UserService) {
     //   this.http.listen().subscribe((m) => console.log(m));
@@ -53,7 +54,7 @@ export class UsersTableComponent {
   ngOnInit() {
     this.http.getUser(this.url).subscribe({
       next: (res) => {
-        console.log(res);
+        console.log('Datasource:', res);
         this.dataSource = res;
       },
       error: (res) => {

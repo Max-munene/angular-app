@@ -64,6 +64,7 @@ import { AddUserComponent } from './components/add-user/add-user.component';
 import { UserService } from './add-user.service';
 import { MapComponent } from './components/map/map.component';
 import { CommonModule } from '@angular/common';
+import { SettingsComponent } from './components/settings/settings.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -91,6 +92,7 @@ import { CommonModule } from '@angular/common';
     LoginFormComponent,
     AddUserComponent,
     MapComponent,
+    SettingsComponent,
 
     // HomeComponent
   ],

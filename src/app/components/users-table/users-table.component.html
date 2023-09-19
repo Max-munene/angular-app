@@ -59,16 +59,18 @@
     </tr>
   </thead>
   <tbody>
-    <tr *[ngFor]="let data of displayedData">
-      <th scope="row">1</th>
-      <td>{{ data.firstName }}</td>
-      <td>{{ data.secondName }}</td>
-      <td>{{ data.email }}</td>
-      <td>{{ data.phoneNumber }}</td>
-      <td>{{ data.address }}</td>
-      <td>{{ data.age }}</td>
-      <td>{{ data.userNumber }}</td>
-    </tr>
+    <ng-container *ngFor="let data of dataSource">
+      <tr>
+        <th scope="row">1</th>
+        <td>{{ data.firstName }}</td>
+        <td>{{ data.secondName }}</td>
+        <td>{{ data.email }}</td>
+        <td>{{ data.phoneNumber }}</td>
+        <td>{{ data.address }}</td>
+        <td>{{ data.age }}</td>
+        <td>{{ data.userNumber }}</td>
+      </tr>
+    </ng-container>
     <!-- <tr>
       <th scope="row">2</th>
       <td>Jacob</td>
