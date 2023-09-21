@@ -126,6 +126,7 @@ import { SettingsComponent } from './components/settings/settings.component';
     HttpClientModule,
     ReactiveFormsModule,
     NgChartsModule,
+
     UsersTableComponent,
     CommonModule,
   ],

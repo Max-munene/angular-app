@@ -15,6 +15,7 @@ import { UsersComponent } from './components/users/users.component';
 import { LoginFormComponent } from './components/login-form/login-form.component';
 import { MapComponent } from './components/map/map.component';
 import { SettingsComponent } from './components/settings/settings.component';
+import { ActionListComponent } from './components/action-list/action-list.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
       // { path: 'profile', component: ProfilePhotoComponent },
       { path: 'settings', component: SettingsComponent },
       { path: 'practice', component: PracticeComponent },
+      { path: 'actionList', component: ActionListComponent },
     ],
   },
   { path: 'homelocation', component: HomelocationsComponent },

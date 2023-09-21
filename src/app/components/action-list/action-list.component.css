@@ -1,0 +1,34 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  flex-wrap: wrap;
+  justify-content: left;
+  padding: 1.8rem;
+  position: relative;
+  min-height: 50px;
+  margin: 1.8rem 0 1.5rem;
+  border-radius: 7px;
+}
+.main-content-title {
+  color: #170c6b;
+  font-weight: 500;
+  font-size: 30px;
+  text-indent: -1px;
+  line-height: 1;
+  position: relative;
+  margin-bottom: 0px;
+  padding-top: 0.75rem;
+  padding-left: 0.75rem;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  list-style: none;
+  border-radius: 0;
+}
+.page-header .breadcrumb-item.active {
+  color: #7787bc;
+}
