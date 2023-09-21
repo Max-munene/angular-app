@@ -2,3 +2,7 @@
   height: 80vh;
   width: 95%;
 }
+.page-header {
+  display: flex;
+  justify-content: center;
+}
