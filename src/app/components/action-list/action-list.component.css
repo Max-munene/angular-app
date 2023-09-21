@@ -1,17 +1,20 @@
 .page-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   /* align-items: center; */
   flex-wrap: wrap;
-  justify-content: left;
+  justify-content: space-between;
   padding: 1.8rem;
   position: relative;
   min-height: 50px;
-  margin: 1.8rem 0 1.5rem;
+  margin: 1.8rem 1.5rem;
   border-radius: 7px;
+  background-color: white;
+  margin-top: 0;
+  height: 18vh;
 }
 .main-content-title {
-  color: #170c6b;
+  color: #144b73;
   font-weight: 500;
   font-size: 30px;
   text-indent: -1px;
@@ -20,6 +23,9 @@
   margin-bottom: 0px;
   padding-top: 0.75rem;
   padding-left: 0.75rem;
+}
+.title {
+  height: fit-content;
 }
 .breadcrumb {
   display: flex;
@@ -31,4 +37,25 @@
 }
 .page-header .breadcrumb-item.active {
   color: #7787bc;
+}
+.btn-download {
+  background-color: #144b73;
+}
+.d-flex {
+  height: fit-content;
+  i {
+    color: #144b73;
+  }
+  button {
+    border: #7787bc solid;
+  }
+}
+.notification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  i {
+    border: 3px solid #144b73;
+  }
 }

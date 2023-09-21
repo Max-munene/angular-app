@@ -21,6 +21,7 @@ import { ChartModule } from 'angular-highcharts';
 
 // Bootstrap
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+// import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 // import { ModuleModule } from './module/module.module';
 // Other Imports
@@ -65,6 +66,7 @@ import { UserService } from './add-user.service';
 import { MapComponent } from './components/map/map.component';
 import { CommonModule } from '@angular/common';
 import { SettingsComponent } from './components/settings/settings.component';
+import { ActionListComponent } from './components/action-list/action-list.component';
 
 // import { MatDrawerModule } from '@angular/material/sidenav';
 
@@ -93,6 +95,7 @@ import { SettingsComponent } from './components/settings/settings.component';
     AddUserComponent,
     MapComponent,
     SettingsComponent,
+    ActionListComponent,
 
     // HomeComponent
   ],
@@ -121,7 +124,6 @@ import { SettingsComponent } from './components/settings/settings.component';
     MatDialogModule,
 
     BsDropdownModule,
-
     ChartModule,
     HttpClientModule,
     ReactiveFormsModule,
